@@ -1,0 +1,225 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping</title>
+</head>
+<body>
+    <div class="header">
+        <span class="logo">Shopee..</span>
+        <div class="header-row">
+            <div class="search-bar">
+                <input type="text" placeholder="Try Shoes, electronics or Search by Product">
+            </div>
+            <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+        <div class="profile-cart">
+            <span>Profile</span>
+            <span>Cart</span>
+        </div>
+    </div>
+    
+    <div id="shopping-layout">
+        <form>
+            <select id="category" name="category">
+                <option id="all" value="all-categories">All categories</option>
+                <option id="ele" value="electronics">Electronics</option>
+                <option id="clo" value="clothes">Clothes</option>
+                <option id="sho" value="shoes">Shoes</option>
+            </select>
+            <select id="sort" name="sort">
+                <option id="" value="sort-by">Sort By</option>
+                <option id="price-high" value="price-high">Price:High to Low</option>
+                <option id="price-low" value="price-low">Price:Low to High</option>
+                <option id="rating" value="rating">Rating:High to Low</option>
+            </select>
+        </form>
+        <div id="cards">
+            <div id="all-items">
+                <div id="items">
+                <div class="item" data-category="shoes">
+                    <div class="img-wrapper">
+                        <img src="./src/shoe-1.jfif" alt="Trail Runner">
+                    </div>
+                    <p>Name: Trail Runner</p>
+                    <p>Price: ₹2,499</p>
+                    <p>Rating: ⭐⭐⭐⭐☆ (4.1/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="shoes">
+                    <div class="img-wrapper">
+                        <img src="./src/shoe-2.jfif" alt="Urban Sneaker">
+                    </div>
+                    <p>Name: Urban Sneaker</p>
+                    <p>Price: ₹3,199</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (4.6/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="shoes">
+                    <div class="img-wrapper">
+                        <img src="./src/shoe-3.jfif" alt="Campus Blue">
+                    </div>
+                    <p>Name: Campus Blue</p>
+                    <p>Price: ₹2,799</p>
+                    <p>Rating: ⭐⭐⭐⭐☆ (4.3/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="shoes">
+                    <div class="img-wrapper">
+                        <img src="./src/shoe-4.jfif" alt="Grey Flex">
+                    </div>
+                    <p>Name: Grey Flex</p>
+                    <p>Price: ₹2,599</p>
+                    <p>Rating: ⭐⭐⭐⭐☆ (4.0/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="shoes">
+                    <div class="img-wrapper">
+                        <img src="./src/navy.jfif" alt="Navy Glide">
+                    </div>
+                    <p>Name: Navy Glide</p>
+                    <p>Price: ₹3,499</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (4.7/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="shoes">
+                    <div class="img-wrapper">
+                        <img src="./src/bshoe.jfif" alt="Coffee Brown Classic">
+                    </div>
+                    <p>Name: Coffee Brown Classic</p>
+                    <p>Price: ₹2,299</p>
+                    <p>Rating: ⭐⭐⭐⭐☆ (4.2/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="electronics">
+                    <div class="img-wrapper">
+                        <img src="./src/samsung-fo5.jfif" alt="Smartwatch">
+                    </div>
+                    <p>Name: Smansung Galaxy F05</p>
+                    <p>Price: ₹12,999</p>
+                    <p>Rating: ⭐⭐⭐⭐☆ (4.5/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="electronics">
+                    <div class="img-wrapper">
+                        <img src="./src/earbuds.jfif" alt="Wireless Earbuds">
+                    </div>
+                    <p>Name: Wireless Earbuds</p>
+                    <p>Price: ₹3,999</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (4.7/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="electronics">
+                    <div class="img-wrapper">
+                        <img src="./src/samsung.jfif" alt="Samsung Galaxy S23">
+                    </div>
+                    <p>Name: Samsung Galaxy S23</p>
+                    <p>Price: ₹74,999</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (4.8/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="electronics">
+                    <div class="img-wrapper">
+                        <img src="./src/iphone-15.jfif" alt="iPhone 15 Pro Max">
+                    </div>
+                    <p>Name: iPhone 15 Pro Max</p>
+                    <p>Price: ₹1,59,900</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (4.9/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="electronics">
+                    <div class="img-wrapper">
+                        <img src="./src/headphones.jfif" alt="Sony WH-1000XM5 Headphones">
+                    </div>
+                    <p>Name: Sony WH-1000XM5</p>
+                    <p>Price: ₹29,990</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (4.7/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="electronics">
+                    <div class="img-wrapper">
+                        <img src="./src/laptop.jpg" alt="Apple MacBook Air M2">
+                    </div>
+                    <p>Name: MacBook Air M2</p>
+                    <p>Price: ₹1,14,900</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (4.9/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="clothes">
+                    <img src="./src/denim.jfif" alt="Denim Jacket">
+                    <p>Name: Denim Jacket</p>
+                    <p>Price: ₹2,499</p>
+                    <p>Rating: ⭐⭐⭐⭐☆ (4.4/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="clothes">
+                    <img src="./src/hoddie-1.jfif" alt="Casual Hoodie">
+                    <p>Name: Casual Hoodie</p>
+                    <p>Price: ₹1,999</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (4.6/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="clothes">
+                    <img src="./src/blue-shirt.jfif" alt="Blue Denim Shirt">
+                    <p>Name: Blue Denim Shirt</p>
+                    <p>Price: ₹1,299</p>
+                    <p>Rating: ⭐⭐⭐⭐☆ (4.3/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="clothes">
+                    <img src="./src/black-shirt.jfif" alt="Black Casual T-Shirt">
+                    <p>Name: Black Casual T-Shirt</p>
+                    <p>Price: ₹799</p>
+                    <p>Rating: ⭐⭐⭐⭐☆ (4.1/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+                <div class="item" data-category="clothes">
+                    <div class="img-wrapper">
+                        <img src="./src/hoddie-2.jfif" alt="Red Hoodie">
+                    </div>
+                    <p>Name: Red Hoodie</p>
+                    <p>Price: ₹1,599</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (4.8/5)</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+               
+               
+            </div>
+            </div>
+        </div>
+    
+    <script src="script1.js"></script>
+    <script>
+    // Theme toggle logic
+    const themeToggle = document.getElementById('themeToggle');
+    const icon = themeToggle.querySelector('i');
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        if(theme === 'dark') {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+        localStorage.setItem('theme', theme);
+    }
+    themeToggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        setTheme(current === 'light' ? 'dark' : 'light');
+    });
+    // On load, set theme from localStorage or system
+    (function(){
+        const saved = localStorage.getItem('theme');
+        if(saved) setTheme(saved);
+        else if(window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+        else setTheme('light');
+    })();
+    </script>
+</body>
+</html>
